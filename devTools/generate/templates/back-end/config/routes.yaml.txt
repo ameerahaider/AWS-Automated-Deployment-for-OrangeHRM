@@ -1,4 +1,0 @@
-view_todo:
-  path: /todo/items
-  controller: OrangeHRM\ToDo\Controller\ToDoController::handle
-  methods: [ GET ]
