@@ -38,12 +38,13 @@ The deployment procedure encompasses two pipelines:
 
 Prior to initiating the pipelines, please perform the following preliminary tasks:
 
-1. Create an S3 bucket named "my-terraform-state-bucket-cicd" for storing Terraform state.
-2. Set up a publicly accessible Elastic Container Registry (ECR) repository named "orangehrm" to house Docker images.
-3. Configure an Identity Provider within GitLab for seamless integration with AWS services.
-4. Establish an AWS Role and associated Policy for assuming roles during pipeline execution.
-5. Push the `infra` branch to initiate the infrastructure setup process.
-6. Deploy the OrangeHRM application by triggering the `deploy` branch pipeline.
+1. Download OrangeHRM Source Files: Acquire the OrangeHRM source code from GitHub repository: https://github.com/orangehrm/orangehrm.
+2. Create an S3 bucket named "my-terraform-state-bucket-cicd" for storing Terraform state.
+3. Set up a publicly accessible Elastic Container Registry (ECR) repository named "orangehrm" to house Docker images.
+4. Configure an Identity Provider within GitLab for seamless integration with AWS services.
+5. Establish an AWS Role and associated Policy for assuming roles during pipeline execution.
+6. Push the `infra` branch to initiate the infrastructure setup process.
+7. Deploy the OrangeHRM application by triggering the `deploy` branch pipeline.
 
 ## Workflow
 
